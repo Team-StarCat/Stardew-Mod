@@ -1,0 +1,30 @@
+{
+    "Format": "1.0",
+    "Quests": [
+        {
+            "Name": "fishy_delivery",
+            "Type": "ItemDelivery",
+            "Title": "Fishy Delivery",
+            "Description": "I be very hungered. Please bring me a juicy herring.\n\n- Reward 5000g",
+            "Objective": "Bring a herring to Caroline",
+            "Reward": 5000,
+            "RewardType": "Money",
+            "Cancelable": true,
+            "Trigger": "Caroline 147",
+            "ReactionText": "Thank you, @! I will devour it with glee.",
+            "FriendshipGain": {
+                "Caroline": 100
+            }
+        }
+    ],
+    "Offers": [
+        {
+            "QuestName": "fishy_delivery",
+            "OfferedBy": "Bulletinboard",
+            "QuestNeverAccepted": "yes",
+            "When": {
+                
+            }
+        }
+    ]
+  }
