@@ -1,0 +1,16 @@
+{
+  "Format": "1.23.0",
+
+  "CustomLocations": [
+    // Add Custom Quest Area Here
+    {
+      "Name": "catVillage",
+      "FromMapFile": "<map file location here>"
+    }
+  ],
+
+  // Changes To Existing Content Go Here
+  "Changes": [
+      
+  ]
+}
