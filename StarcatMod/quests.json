@@ -5,25 +5,52 @@
             "Name": "fishy_delivery",
             "Type": "ItemDelivery",
             "Title": "Fishy Delivery",
-            "Description": "I be very hungered. Please bring me a juicy herring.\n\n- Reward 5000g",
-            "Objective": "Bring a herring to Caroline",
+            "Description": "I be very hungered. Please bring me a juicy sardine.\n\n- 5000g",
+            "Objective": "Bring a sardine to Willy",
             "Reward": 5000,
             "RewardType": "Money",
-            "Cancelable": true,
-            "Trigger": "Caroline 147",
+            "Cancelable": false,
+            "Trigger": "Willy 131",
             "ReactionText": "Thank you, @! I will devour it with glee.",
             "FriendshipGain": {
-                "Caroline": 100
+                "Willy": 100
+            }
+        },
+        {
+            "Name": "watery_exploration",
+            "Type": "Location",
+            "Title": "Watery Exploration",
+            "Description": "I heard there's a good fishing spot near by, would you mind checking it out.\n\n- Reward 10000g",
+            "Objective": "Go to the beach",
+            "Reward": 10000,
+            "RewardType": "Money",
+            "Cancelable": false,
+            "Trigger": "Beach",
+            "ReactionText": "Thank you, @! Glad to know it truely exists.",
+            "FriendshipGain": {
+                "Willy": 100
             }
         }
     ],
     "Offers": [
         {
             "QuestName": "fishy_delivery",
-            "OfferedBy": "Bulletinboard",
+            "OfferedBy": "NPC",
+            "OfferDetails": {
+                "NpcName": "Willy",
+                "DialogueText": "I haven't eaten in many days, would you be so helpful as to get me a sardine to tide the onset of death."
+            },
             "QuestNeverAccepted": "yes",
             "When": {
                 
+            }
+        },
+        {
+            "QuestName": "watery_exploration",
+            "OfferedBy": "Bulletinboard",
+            "QuestNeverAccepted": "yes",
+            "When": {
+                "FriendshipLevel": "Willy 1"
             }
         }
     ]
