@@ -21,11 +21,14 @@
             "Type": "Location",
             "Title": "Watery Exploration",
             "Description": "I heard there's a good fishing spot near by, would you mind checking it out.\n\n- Reward 10000g",
-            "Objective": "Go to the beach",
+            "Objective": "Cross the bridge to Jojo Mart",
             "Reward": 10000,
             "RewardType": "Money",
             "Cancelable": false,
-            "Trigger": "Beach",
+            "Trigger": {
+                "Location": "Town",
+                "Area": "78 53 2 2"
+            },
             "ReactionText": "Thank you, @! Glad to know it truely exists.",
             "FriendshipGain": {
                 "Willy": 100
