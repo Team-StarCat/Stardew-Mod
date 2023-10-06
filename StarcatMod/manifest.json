@@ -10,11 +10,11 @@
   "UpdateKeys": [],
   "ContentPackFor": {
     "UniqueID": "PurrplingCat.QuestFramework"
-  }
-  //"Dependencies": [
-  //  {
-  //    "UniqueID": "PurrplingCat.QuestFramework",
-  //    "IsRequired": true
-  //  }
-  //]
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "PurrplingCat.QuestEssentials",
+      "IsRequired": true
+    }
+  ]
 }

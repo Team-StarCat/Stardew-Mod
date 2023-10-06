@@ -18,16 +18,17 @@
         },
         {
             "Name": "watery_exploration",
-            "Type": "Location",
+            "Type": "PurrplingCat.QuestEssentials/EnterSpot",
             "Title": "Watery Exploration",
             "Description": "I heard there's a good fishing spot near by, would you mind checking it out.\n\n- Reward 10000g",
             "Objective": "Cross the bridge to Jojo Mart",
             "Reward": 10000,
             "RewardType": "Money",
             "Cancelable": false,
-            "Trigger": {
+            "Data": {
+                "Area": "78,53,2,2",
                 "Location": "Town",
-                "Area": "78 53 2 2"
+                //"EventOnComplete": "" // Cat guides player to forest village event
             },
             "ReactionText": "Thank you, @! Glad to know it truely exists.",
             "FriendshipGain": {
