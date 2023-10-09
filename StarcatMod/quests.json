@@ -18,7 +18,7 @@
         },
         {
             "Name": "watery_exploration",
-            "Type": "PurrplingCat.QuestEssentials/EnterSpot",
+            "Type": "EnterSpot",
             "Title": "Watery Exploration",
             "Description": "I heard there's a good fishing spot near by, would you mind checking it out.\n\n- Reward 10000g",
             "Objective": "Cross the bridge to Jojo Mart",
