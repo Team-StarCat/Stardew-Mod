@@ -18,18 +18,25 @@
         },
         {
             "Name": "watery_exploration",
-            "Type": "EnterSpot",
+            "Type": "PurrplingCat.QuestEssentials/Adventure",
             "Title": "Watery Exploration",
             "Description": "I heard there's a good fishing spot near by, would you mind checking it out.\n\n- Reward 10000g",
-            "Objective": "Cross the bridge to Jojo Mart",
+            "Tasks": [
+                {
+                    "Name": "cross_bridge",
+                    "Type": "EnterSpot",
+                    "Data": {
+                        "Area": "78,53,2,2",
+                        "Location": "Town"
+                        //"EventOnComplete": "" // Cat guides player to forest village event
+                    },
+                    "Description": "Cross the bridge to Jojo Mart"
+                }
+            ],
+            //"Objective": "Cross the bridge to Jojo Mart",
             "Reward": 10000,
             "RewardType": "Money",
             "Cancelable": false,
-            "Data": {
-                "Area": "78,53,2,2",
-                "Location": "Town",
-                //"EventOnComplete": "" // Cat guides player to forest village event
-            },
             "ReactionText": "Thank you, @! Glad to know it truely exists.",
             "FriendshipGain": {
                 "Willy": 100
@@ -52,7 +59,7 @@
         {
             "QuestName": "watery_exploration",
             "OfferedBy": "Bulletinboard",
-            "QuestNeverAccepted": "yes",
+            //"QuestNeverAccepted": "yes",
             "When": {
                 "FriendshipLevel": "Willy 1"
             }
