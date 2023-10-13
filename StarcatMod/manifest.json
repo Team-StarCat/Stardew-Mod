@@ -5,7 +5,10 @@
   "Version": "0.0.1",
   "Description": "<One or two sentences about the mod>",
   "UniqueID": "StarCat.CatastrophicHunger",
-  "EntryDll": "StarcatMod.dll",
+  //"EntryDll": "StarcatMod.dll",
   "MinimumApiVersion": "3.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
 }
