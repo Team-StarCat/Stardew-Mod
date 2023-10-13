@@ -15,7 +15,6 @@
             "FriendshipGain": {
                 "Willy": 100
             },
-            
         },
         {
             "Name": "watery_exploration",
@@ -52,25 +51,20 @@
                 "NpcName": "Willy",
                 "DialogueText": "I haven't eaten in many days, would you be so helpful as to get me a sardine to tide the onset of death."
             },
-            "QuestNeverAccepted": "yes",
-            "RequiredQuests": [
-                "watery_exploration"
-            ],
             "When": {
-                
+                "QuestNeverAccepted": "yes",
             }
         },
         {
             "QuestName": "watery_exploration",
-            //"OfferedBy": "Bulletinboard",
             "OfferedBy": "NPC",
             "OfferDetails": {
                 "NpcName": "Willy",
                 "DialogueText": "I heard there's a good fishing spot near by, would you mind checking it out."
             },
-            "QuestNeverAccepted": "yes",
             "When": {
-                //"FriendshipLevel": "Willy 1"
+                "QuestNeverAccepted": "yes",
+                "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHunger"
             }
         }
     ]
