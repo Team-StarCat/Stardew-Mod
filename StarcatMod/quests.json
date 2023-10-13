@@ -14,7 +14,8 @@
             "ReactionText": "Thank you, @! I will devour it with glee.",
             "FriendshipGain": {
                 "Willy": 100
-            },
+            }
+            //"EventOnComplete": "" // Cat guides player to forest village event
         },
         {
             "Name": "watery_exploration",
@@ -28,12 +29,10 @@
                     "Data": {
                         "Tile": "78,53",
                         "Location": "Town"
-                        //"EventOnComplete": "" // Cat guides player to forest village event
                     },
                     "Description": "Cross the bridge to Jojo Mart"
                 }
             ],
-            //"Objective": "Cross the bridge to Jojo Mart",
             "Reward": 10000,
             "RewardType": "Money",
             "Cancelable": false,
