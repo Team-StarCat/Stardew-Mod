@@ -4,8 +4,8 @@
   "CustomLocations": [
     // Add Custom Quest Area Here
     {
-      "Name": "catVillage",
-      "FromMapFile": "<map file location here>"
+      "Name": "Custom_catVillage",
+      "FromMapFile": "assets/Patches/CatVillage2.tmx"
     }
   ],
 
@@ -19,6 +19,35 @@
         "79669896": "continue/64 15/farmer 64 16 2 Leah 64 18 0/skippable/pause 1500/"
       }
     },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Woods", //The map you are patching it into
+      "FromFile": "assets/Patches/CatVillage2.tmx", //the file pathing to your map
+      "ToArea": {
+        "X": 49,
+        "Y": 54,
+        "Width": 60,
+        "Height": 60
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedALL": false
+      } //when conditions. More on this later!
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Woods", //the map you are adding the warp to
+      "TextOperations": [
+          {
+              "Operation": "Append", //append = add to existing without over-writing
+              "Target": [
+                  "MapProperties",
+                  "Warp"
+              ],
+              "Value": "46 2 Custom_catVillage 49 54",
+              "Delimiter": " "
+          }
+      ],
+  },
     // {
     //   "Action": "EditData",
     //   "Target": "Characters/Dialogue/Cat1",
