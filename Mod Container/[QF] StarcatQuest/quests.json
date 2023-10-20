@@ -1,0 +1,70 @@
+{
+    "Format": "1.0",
+    "Quests": [
+        {
+            "Name": "fishy_delivery",
+            "Type": "ItemDelivery",
+            "Title": "Fishy Delivery",
+            "Description": "I be very hungered. Please bring me a juicy sardine.\n\n- 5000g",
+            "Objective": "Bring a sardine to Willy",
+            "Reward": 5000,
+            "RewardType": "Money",
+            "Cancelable": false,
+            "Trigger": "Willy 131",
+            "ReactionText": "Thank you, @! I will devour it with glee.",
+            "FriendshipGain": {
+                "Willy": 100
+            }
+            //"EventOnComplete": "" // Cat guides player to forest village event
+        },
+        {
+            "Name": "watery_exploration",
+            "Type": "PurrplingCat.QuestEssentials/Adventure",
+            "Title": "Watery Exploration",
+            "Description": "I heard there's a good fishing spot near by, would you mind checking it out.\n\n- Reward 10000g",
+            "Tasks": [
+                {
+                    "Name": "cross_bridge",
+                    "Type": "EnterSpot",
+                    "Data": {
+                        "Tile": "15,15",
+                        "Location": "Custom_catVillage"
+                    },
+                    "Description": "Clear the path to the lake"
+                }
+            ],
+            "Reward": 10000,
+            "RewardType": "Money",
+            "Cancelable": false,
+            "ReactionText": "Thank you, @! Glad to know it truely exists.",
+            "FriendshipGain": {
+                "Willy": 100
+            }
+        }
+    ],
+    "Offers": [
+        {
+            "QuestName": "fishy_delivery",
+            "OfferedBy": "NPC",
+            "OfferDetails": {
+                "NpcName": "Willy",
+                "DialogueText": "I haven't eaten in many days, would you be so helpful as to get me a sardine to tide the onset of death."
+            },
+            "When": {
+                "QuestNeverAccepted": "yes",
+            }
+        },
+        {
+            "QuestName": "watery_exploration",
+            "OfferedBy": "NPC",
+            "OfferDetails": {
+                "NpcName": "Willy",
+                "DialogueText": "I heard there's a good fishing spot near by, would you mind checking it out."
+            },
+            "When": {
+                "QuestNeverAccepted": "yes",
+                "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest"
+            }
+        }
+    ]
+}
