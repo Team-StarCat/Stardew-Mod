@@ -40,6 +40,27 @@
             "FriendshipGain": {
                 "Willy": 100
             }
+        },
+        {
+            "Name": "feed_village",
+            "Type": "PurrplingCat.QuestEssentials/Adventure",
+            "Title": "Feed the Village",
+            "Description": "The cats of the village are very hungery, please bring them food",
+            "Tasks": [
+                {
+                    "Name": "feed_red",
+                    "Type": 
+                },
+                {
+                    "Name": "feed_green",
+                },
+                {
+                    "Name": "feed_blue",
+                },
+                {
+                    "Name": "feed_orange",
+                }
+            ]
         }
     ],
     "Offers": [
