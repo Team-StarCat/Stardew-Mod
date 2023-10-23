@@ -49,16 +49,23 @@
             "Tasks": [
                 {
                     "Name": "feed_red",
-                    "Type": 
+                    "Type": "ItemDelivery",
+                    "Trigger":"<name> 143" // Catfish
                 },
                 {
                     "Name": "feed_green",
+                    "Type": "ItemDelivery",
+                    "Trigger":"<name> 699" // Tiger Trout
                 },
                 {
                     "Name": "feed_blue",
+                    "Type": "ItemDelivery",
+                    "Trigger":"<name> 269" // Midnight Carp
                 },
                 {
                     "Name": "feed_orange",
+                    "Type": "ItemDelivery",
+                    "Trigger":"<name> 136" // Large Mouth Bass
                 }
             ]
         }
