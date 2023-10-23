@@ -325,6 +325,12 @@
   <properties>
    <property name="Water" value="T"/>
   </properties>
+  <animation>
+   <frame tileid="1293" duration="250"/>
+   <frame tileid="1294" duration="250"/>
+   <frame tileid="1295" duration="250"/>
+   <frame tileid="1296" duration="250"/>
+  </animation>
  </tile>
  <tile id="1294">
   <properties>
