@@ -52,10 +52,43 @@
                     "Type": "Talk",
                     "Description": "Talk with Caroline",
                     "Data": {
-                        // Talk to abby and then see an event
                         "NpcName": "Caroline",
                         "DialogueText": "I haven't eaten in many days, could you bring me a catfish",
-                        "ReceiveItems": "item_catfish" // Get a catfish (todo: make it bait) when you talk to caroline
+                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
+                        //"EventOnComplete": "" // Give player bait and recipe
+                    },
+                },
+                {
+                    "Name": "talk_green",
+                    "Type": "Talk",
+                    "Description": "Talk with Pierre",
+                    "Data": {
+                        "NpcName": "Pierre",
+                        "DialogueText": "I haven't eaten in many days, could you bring me a Tiger Trout",
+                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
+                        //"EventOnComplete": "" // Give player bait and recipe
+                    },
+                },
+                {
+                    "Name": "talk_blue",
+                    "Type": "Talk",
+                    "Description": "Talk with Abigail",
+                    "Data": {
+                        "NpcName": "Abigail",
+                        "DialogueText": "I haven't eaten in many days, could you bring me a Midnight Carp",
+                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
+                        //"EventOnComplete": "" // Give player bait and recipe
+                    },
+                },
+                {
+                    "Name": "talk_orange",
+                    "Type": "Talk",
+                    "Description": "Talk with Shane",
+                    "Data": {
+                        "NpcName": "Shane",
+                        "DialogueText": "I haven't eaten in many days, could you bring me a Largemouth Bass",
+                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
+                        //"EventOnComplete": "" // Give player bait and recipe
                     },
                 },
                 {
@@ -83,7 +116,7 @@
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
-                    //"RequiredTasks": [ "talk_green" ],
+                    "RequiredTasks": [ "talk_green" ],
                     "Goal": 1
                 },
                 {
@@ -96,7 +129,7 @@
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
-                    //"RequiredTasks": [ "talk_blue" ],
+                    "RequiredTasks": [ "talk_blue" ],
                     "Goal": 1
                 },
                 {
@@ -109,7 +142,7 @@
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
-                    //"RequiredTasks": [ "talk_orange" ],
+                    "RequiredTasks": [ "talk_orange" ],
                     "Goal": 1
                 }
             ]
