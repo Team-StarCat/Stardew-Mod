@@ -48,29 +48,75 @@
             "Description": "The cats of the village are very hungery, please bring them food",
             "Tasks": [
                 {
+                    "Name": "talk_red",
+                    "Type": "Talk",
+                    "Description": "Talk with Caroline",
+                    "Data": {
+                        // Talk to abby and then see an event
+                        "NpcName": "Caroline",
+                        "DialogueText": "I haven't eaten in many days, could you bring me a catfish",
+                        "ReceiveItems": "item_catfish" // Get a catfish (todo: make it bait) when you talk to caroline
+                    },
+                },
+                {
                     "Name": "feed_red",
-                    "Type": "ItemDelivery",
-                    "Trigger":"<name> 143" // Catfish
+                    "Type": "Deliver",
+                    "Description": "Bring Carolne a Catfish",
+                    "Data": {
+                        "NpcName": "Caroline",
+                        "AcceptedContextTags": "item_catfish", // Catfish
+                        "Message": "Thank you for this delicious fish",
+                        "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
+                    },
+                    "RequiredTasks": [
+                        "talk_red"
+                    ],
+                    "Goal": 1
                 },
                 {
                     "Name": "feed_green",
-                    "Type": "ItemDelivery",
-                    "Trigger":"<name> 699" // Tiger Trout
+                    "Type": "Deliver",
+                    "Description": "Bring Pierre a Tiger Trout",
+                    "Data": {
+                        "NpcName": "Pierre",
+                        "AcceptedContextTags": "699", // Tiger Trout
+                        "Message": "Thank you for this delicious fish",
+                        "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
+                    },
+                    //"RequiredTasks": [ "talk_green" ],
+                    "Goal": 1
                 },
                 {
                     "Name": "feed_blue",
-                    "Type": "ItemDelivery",
-                    "Trigger":"<name> 269" // Midnight Carp
+                    "Type": "Deliver",
+                    "Description": "Bring Abigail a Midnight Carp",
+                    "Data": {
+                        "NpcName": "Abigail",
+                        "AcceptedContextTags": "269", // Midnight Carp
+                        "Message": "Thank you for this delicious fish",
+                        "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
+                    },
+                    //"RequiredTasks": [ "talk_blue" ],
+                    "Goal": 1
                 },
                 {
                     "Name": "feed_orange",
-                    "Type": "ItemDelivery",
-                    "Trigger":"<name> 136" // Large Mouth Bass
+                    "Type": "Deliver",
+                    "Description": "Bring Shane a largemouth bass",
+                    "Data": {
+                        "NpcName": "Shane",
+                        "AcceptedContextTags": "136", // Largemouth Bass
+                        "Message": "Thank you for this delicious fish",
+                        "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
+                    },
+                    //"RequiredTasks": [ "talk_orange" ],
+                    "Goal": 1
                 }
             ]
         }
     ],
     "Offers": [
+        /*
         {
             "QuestName": "fishy_delivery",
             "OfferedBy": "NPC",
@@ -92,6 +138,19 @@
             "When": {
                 "QuestNeverAccepted": "yes",
                 "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest"
+            }
+        },
+        */
+        {
+            "QuestName": "feed_village",
+            "OfferedBy": "NPC",
+            "OfferDetails": {
+                "NpcName": "Willy",
+                "DialogueText": "Please feed people"
+            },
+            "When": {
+                "QuestNeverAccepted": "yes",
+                "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest watery_exploration@StarCat.CatastrophicHungerQuest",
             }
         }
     ]
