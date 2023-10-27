@@ -112,7 +112,7 @@
                     "Description": "Bring Pierre a Tiger Trout",
                     "Data": {
                         "NpcName": "Pierre",
-                        "AcceptedContextTags": "699", // Tiger Trout
+                        "AcceptedContextTags": "item_tiger_trout", // Tiger Trout
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
@@ -125,7 +125,7 @@
                     "Description": "Bring Abigail a Midnight Carp",
                     "Data": {
                         "NpcName": "Abigail",
-                        "AcceptedContextTags": "269", // Midnight Carp
+                        "AcceptedContextTags": "item_midnight_carp", // Midnight Carp
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
@@ -138,7 +138,7 @@
                     "Description": "Bring Shane a largemouth bass",
                     "Data": {
                         "NpcName": "Shane",
-                        "AcceptedContextTags": "136", // Largemouth Bass
+                        "AcceptedContextTags": "item_largemout_bass", // Largemouth Bass
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
