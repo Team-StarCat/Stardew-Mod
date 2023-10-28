@@ -15,7 +15,7 @@
             "FriendshipGain": {
                 "Willy": 100
             }
-            //"EventOnComplete": "" // Cat guides player to forest village event
+            //"EventOnComplete": "" // Cat guides player to forest village/entrance
         },
         {
             "Name": "watery_exploration",
@@ -54,9 +54,8 @@
                     "Data": {
                         "NpcName": "Caroline",
                         "DialogueText": "I haven't eaten in many days, could you bring me a catfish",
-                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
-                        //"EventOnComplete": "" // Give player bait and recipe
-                    },
+                        "ReceiveItems": "object_catfish" // For testing purposes just give them the fish (todo: replace this with bait)
+                    }
                 },
                 {
                     "Name": "talk_green",
@@ -65,9 +64,8 @@
                     "Data": {
                         "NpcName": "Pierre",
                         "DialogueText": "I haven't eaten in many days, could you bring me a Tiger Trout",
-                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
-                        //"EventOnComplete": "" // Give player bait and recipe
-                    },
+                        "ReceiveItems": "object_tiger_trout" // For testing purposes just give them the fish (todo: replace this with bait)
+                    }
                 },
                 {
                     "Name": "talk_blue",
@@ -76,9 +74,8 @@
                     "Data": {
                         "NpcName": "Abigail",
                         "DialogueText": "I haven't eaten in many days, could you bring me a Midnight Carp",
-                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
-                        //"EventOnComplete": "" // Give player bait and recipe
-                    },
+                        "ReceiveItems": "object_midnight_carp" // For testing purposes just give them the fish (todo: replace this with bait)
+                    }
                 },
                 {
                     "Name": "talk_orange",
@@ -87,9 +84,8 @@
                     "Data": {
                         "NpcName": "Shane",
                         "DialogueText": "I haven't eaten in many days, could you bring me a Largemouth Bass",
-                        //"ReceiveItems": "Bait.1@MindMeltMax.QualityBait" // Doesnt work with in game or custom items
-                        //"EventOnComplete": "" // Give player bait and recipe
-                    },
+                        "ReceiveItems": "object_largemouth_bass" // For testing purposes just give them the fish (todo: replace this with bait)
+                    }
                 },
                 {
                     "Name": "feed_red",
@@ -97,7 +93,7 @@
                     "Description": "Bring Carolne a Catfish",
                     "Data": {
                         "NpcName": "Caroline",
-                        "AcceptedContextTags": "item_catfish", // Catfish
+                        "AcceptedContextTags": "item_catfish",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
@@ -112,11 +108,13 @@
                     "Description": "Bring Pierre a Tiger Trout",
                     "Data": {
                         "NpcName": "Pierre",
-                        "AcceptedContextTags": "item_tiger_trout", // Tiger Trout
+                        "AcceptedContextTags": "item_tiger_trout",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
-                    "RequiredTasks": [ "talk_green" ],
+                    "RequiredTasks": [
+                        "talk_green"
+                    ],
                     "Goal": 1
                 },
                 {
@@ -125,11 +123,13 @@
                     "Description": "Bring Abigail a Midnight Carp",
                     "Data": {
                         "NpcName": "Abigail",
-                        "AcceptedContextTags": "item_midnight_carp", // Midnight Carp
+                        "AcceptedContextTags": "item_midnight_carp",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
-                    "RequiredTasks": [ "talk_blue" ],
+                    "RequiredTasks": [
+                        "talk_blue"
+                    ],
                     "Goal": 1
                 },
                 {
@@ -138,18 +138,20 @@
                     "Description": "Bring Shane a largemouth bass",
                     "Data": {
                         "NpcName": "Shane",
-                        "AcceptedContextTags": "item_largemout_bass", // Largemouth Bass
+                        "AcceptedContextTags": "item_largemouth_bass",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
-                    "RequiredTasks": [ "talk_orange" ],
+                    "RequiredTasks": [
+                        "talk_orange"
+                    ],
                     "Goal": 1
                 }
-            ]
+            ],
+            "ReceiveItems": "tool_iridium_rod"
         }
     ],
     "Offers": [
-        /*
         {
             "QuestName": "fishy_delivery",
             "OfferedBy": "NPC",
@@ -173,7 +175,6 @@
                 "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest"
             }
         },
-        */
         {
             "QuestName": "feed_village",
             "OfferedBy": "NPC",
