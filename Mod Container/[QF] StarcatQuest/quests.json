@@ -149,11 +149,17 @@
                 }
             ],
             "RewardType": "Object",
-            "Reward": "163"
+            "Reward": "163",
+            "FriendshipGain": {
+                "Willy": 200,
+                "Caroline": 500,
+                "Abigail": 500,
+                "Pierre": 500,
+                "Shane": 500
+            }
         }
     ],
     "Offers": [
-        /*
         {
             "QuestName": "fishy_delivery",
             "OfferedBy": "NPC",
@@ -177,7 +183,6 @@
                 "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest"
             }
         },
-        */
         {
             "QuestName": "feed_village",
             "OfferedBy": "NPC",
