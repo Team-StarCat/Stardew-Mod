@@ -60,22 +60,6 @@
 			}
 		},
 		{
-			"LogName": "Animations",
-			"Action": "EditData",
-			"Target": "Data/animationDescriptions",
-			"Entries": {
-				"abigail_videogames": "22 21 20/20/20 21 22/Strings\\animationDescriptions:abigail_videogames",
-				"abigail_sit_down": "23/23/23",
-				"abigail_flute": "0/16 16 17 17 18 18 19 19/0/silent"
-			}
-		},
-		{
-			"LogName": "Engagement Dialogue",
-			"Action": "EditData",
-			"Target": "Data/EngagementDialogue",
-			"Entries": {}
-		},
-		{
 			"LogName": "Black Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat1",
@@ -98,7 +82,168 @@
 			"Action": "Load",
 			"Target": "Characters/schedules/Cat1",
 			"FromFile": "assets/Schedule/BlackCatSchedule.json"
-		}
+		},
+    {
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Cat2": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 49 45/Blue Cat"
+			}
+		},
+		{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Cat2": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
+			}
+		},
+    {
+			"LogName": "Blue Cat Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Cat2",
+			"FromFile": "assets/Image/BlueCatPortrait.png"
+		},
+		{
+			"LogName": "Blue Cat Sprites",
+			"Action": "Load",
+			"Target": "Characters/Cat2",
+			"FromFile": "assets/Image/BlueCat.png"
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Cat2",
+			"FromFile": "assets/Dialogue/BlueCatDialogue.json"
+		},
+		{
+			"LogName": "Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Cat2",
+			"FromFile": "assets/Schedule/BlueCatSchedule.json"
+		},
+    {
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Cat3": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 50 45/Red Cat"
+			}
+		},
+		{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Cat3": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
+			}
+		},
+    {
+			"LogName": "Blue Cat Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Cat3",
+			"FromFile": "assets/Image/RedCatPortrait.png"
+		},
+		{
+			"LogName": "Blue Cat Sprites",
+			"Action": "Load",
+			"Target": "Characters/Cat3",
+			"FromFile": "assets/Image/RedCat.png"
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Cat3",
+			"FromFile": "assets/Dialogue/RedCatDialogue.json"
+		},
+		{
+			"LogName": "Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Cat3",
+			"FromFile": "assets/Schedule/RedCatSchedule.json"
+		},
+    {
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Cat4": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 51 45/Bread Cat"
+			}
+		},
+		{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Cat4": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
+			}
+		},
+    {
+			"LogName": "Blue Cat Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Cat4",
+			"FromFile": "assets/Image/BreadCatPortrait.png"
+		},
+		{
+			"LogName": "Blue Cat Sprites",
+			"Action": "Load",
+			"Target": "Characters/Cat4",
+			"FromFile": "assets/Image/BreadCat.png"
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Cat4",
+			"FromFile": "assets/Dialogue/BreadCatDialogue.json"
+		},
+		{
+			"LogName": "Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Cat4",
+			"FromFile": "assets/Schedule/BreadCatSchedule.json"
+		},
+    {
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Cat5": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 52 45/Sleepy Cat"
+			}
+		},
+		{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Cat5": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
+			}
+		},
+    {
+			"LogName": "Blue Cat Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Cat5",
+			"FromFile": "assets/Image/SleepyCatPortrait.png"
+		},
+		{
+			"LogName": "Blue Cat Sprites",
+			"Action": "Load",
+			"Target": "Characters/Cat5",
+			"FromFile": "assets/Image/SleepyCat.png"
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Cat5",
+			"FromFile": "assets/Dialogue/SleepyCatDialogue.json"
+		},
+		{
+			"LogName": "Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Cat5",
+			"FromFile": "assets/Schedule/SleepyCatSchedule.json"
+		},
+    
     // {
     //   "Action": "EditData",
     //   "Target": "Characters/Dialogue/Cat1",
