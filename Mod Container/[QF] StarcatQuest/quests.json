@@ -148,10 +148,12 @@
                     "Goal": 1
                 }
             ],
-            "ReceiveItems": "tool_iridium_rod"
+            "RewardType": "Object",
+            "Reward": "163"
         }
     ],
     "Offers": [
+        /*
         {
             "QuestName": "fishy_delivery",
             "OfferedBy": "NPC",
@@ -160,7 +162,7 @@
                 "DialogueText": "I haven't eaten in many days, would you be so helpful as to get me a sardine to tide the onset of death."
             },
             "When": {
-                "QuestNeverAccepted": "yes",
+                "QuestNeverAccepted": "yes"
             }
         },
         {
@@ -175,6 +177,7 @@
                 "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest"
             }
         },
+        */
         {
             "QuestName": "feed_village",
             "OfferedBy": "NPC",
@@ -184,7 +187,7 @@
             },
             "When": {
                 "QuestNeverAccepted": "yes",
-                "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest watery_exploration@StarCat.CatastrophicHungerQuest",
+                "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest watery_exploration@StarCat.CatastrophicHungerQuest"
             }
         }
     ]
