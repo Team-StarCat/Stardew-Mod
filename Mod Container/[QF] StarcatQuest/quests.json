@@ -194,7 +194,7 @@
             },
             "When": {
                 "QuestNeverAccepted": "yes",
-                //"FriendshipLevel": "Cat1 2",
+                "FriendshipLevel": "Cat1 2",
                 "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest watery_exploration@StarCat.CatastrophicHungerQuest"
             }
         }
