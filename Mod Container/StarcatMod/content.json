@@ -109,7 +109,7 @@
 			"LogName": "Blue Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat2",
-			"FromFile": "assets/Image/BlueCat.png"
+			"FromFile": "assets/Image/BlackCat.png"
 		},
 		{
 			"LogName": "Dialogue",
@@ -149,7 +149,7 @@
 			"LogName": "Blue Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat3",
-			"FromFile": "assets/Image/RedCat.png"
+			"FromFile": "assets/Image/BlackCat.png"
 		},
 		{
 			"LogName": "Dialogue",
@@ -189,7 +189,7 @@
 			"LogName": "Blue Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat4",
-			"FromFile": "assets/Image/BreadCat.png"
+			"FromFile": "assets/Image/BlackCat.png"
 		},
 		{
 			"LogName": "Dialogue",
@@ -229,7 +229,7 @@
 			"LogName": "Blue Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat5",
-			"FromFile": "assets/Image/SleepyCat.png"
+			"FromFile": "assets/Image/BlackCat.png"
 		},
 		{
 			"LogName": "Dialogue",
@@ -242,7 +242,7 @@
 			"Action": "Load",
 			"Target": "Characters/schedules/Cat5",
 			"FromFile": "assets/Schedule/SleepyCatSchedule.json"
-		},
+		}
     
     // {
     //   "Action": "EditData",
