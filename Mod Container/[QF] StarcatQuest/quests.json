@@ -6,14 +6,14 @@
             "Type": "ItemDelivery",
             "Title": "Fishy Delivery",
             "Description": "I be very hungered. Please bring me a juicy sardine.\n\n- 5000g",
-            "Objective": "Bring a sardine to Willy",
+            "Objective": "Bring a sardine to the black cat",
             "Reward": 5000,
             "RewardType": "Money",
             "Cancelable": false,
-            "Trigger": "Willy 131",
+            "Trigger": "Cat1 131",
             "ReactionText": "Thank you, @! I will devour it with glee.",
             "FriendshipGain": {
-                "Willy": 100
+                "Cat1": 100
             }
             //"EventOnComplete": "" // Cat guides player to forest village/entrance
         },
@@ -21,13 +21,14 @@
             "Name": "watery_exploration",
             "Type": "PurrplingCat.QuestEssentials/Adventure",
             "Title": "Watery Exploration",
-            "Description": "I heard there's a good fishing spot near by, would you mind checking it out.\n\n- Reward 10000g",
+            "Description": "The path to the lake is over grown. It's to the north of the village\n\n- Reward 10000g",
             "Tasks": [
                 {
                     "Name": "cross_bridge",
                     "Type": "EnterSpot",
                     "Data": {
-                        "Tile": "15,15",
+                        //"Tile": "16,15", // Can only have one tile active at a time
+                        "Tile": "16,14",
                         "Location": "Custom_catVillage"
                     },
                     "Description": "Clear the path to the lake"
@@ -38,7 +39,7 @@
             "Cancelable": false,
             "ReactionText": "Thank you, @! Glad to know it truely exists.",
             "FriendshipGain": {
-                "Willy": 100
+                "Cat1": 100
             }
         },
         {
@@ -50,9 +51,9 @@
                 {
                     "Name": "talk_red",
                     "Type": "Talk",
-                    "Description": "Talk with Caroline",
+                    "Description": "Talk with the red cat",
                     "Data": {
-                        "NpcName": "Caroline",
+                        "NpcName": "Cat3", // Red cat = Cat3
                         "DialogueText": "I haven't eaten in many days, could you bring me a catfish",
                         "ReceiveItems": "object_catfish" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
@@ -60,9 +61,9 @@
                 {
                     "Name": "talk_green",
                     "Type": "Talk",
-                    "Description": "Talk with Pierre",
+                    "Description": "Talk with the green cat",
                     "Data": {
-                        "NpcName": "Pierre",
+                        "NpcName": "Cat5", // Green Cat = Cat5
                         "DialogueText": "I haven't eaten in many days, could you bring me a Tiger Trout",
                         "ReceiveItems": "object_tiger_trout" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
@@ -70,9 +71,9 @@
                 {
                     "Name": "talk_blue",
                     "Type": "Talk",
-                    "Description": "Talk with Abigail",
+                    "Description": "Talk with the blue cat",
                     "Data": {
-                        "NpcName": "Abigail",
+                        "NpcName": "Cat2", // Blue cat = Cat2
                         "DialogueText": "I haven't eaten in many days, could you bring me a Midnight Carp",
                         "ReceiveItems": "object_midnight_carp" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
@@ -80,9 +81,9 @@
                 {
                     "Name": "talk_orange",
                     "Type": "Talk",
-                    "Description": "Talk with Shane",
+                    "Description": "Talk with the orange cat",
                     "Data": {
-                        "NpcName": "Shane",
+                        "NpcName": "Cat4", // Orange cat = Cat4
                         "DialogueText": "I haven't eaten in many days, could you bring me a Largemouth Bass",
                         "ReceiveItems": "object_largemouth_bass" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
@@ -90,9 +91,9 @@
                 {
                     "Name": "feed_red",
                     "Type": "Deliver",
-                    "Description": "Bring Carolne a Catfish",
+                    "Description": "Bring the red cat a Catfish",
                     "Data": {
-                        "NpcName": "Caroline",
+                        "NpcName": "Cat3", // Red cat = Cat3
                         "AcceptedContextTags": "item_catfish",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
@@ -105,9 +106,9 @@
                 {
                     "Name": "feed_green",
                     "Type": "Deliver",
-                    "Description": "Bring Pierre a Tiger Trout",
+                    "Description": "Bring the green cat a Tiger Trout",
                     "Data": {
-                        "NpcName": "Pierre",
+                        "NpcName": "Cat5", // Green Cat = Cat5
                         "AcceptedContextTags": "item_tiger_trout",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
@@ -120,9 +121,9 @@
                 {
                     "Name": "feed_blue",
                     "Type": "Deliver",
-                    "Description": "Bring Abigail a Midnight Carp",
+                    "Description": "Bring the blue cat a Midnight Carp",
                     "Data": {
-                        "NpcName": "Abigail",
+                        "NpcName": "Cat2", // Blue cat = Cat2
                         "AcceptedContextTags": "item_midnight_carp",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
@@ -135,9 +136,9 @@
                 {
                     "Name": "feed_orange",
                     "Type": "Deliver",
-                    "Description": "Bring Shane a largemouth bass",
+                    "Description": "Bring the orange cat a largemouth bass",
                     "Data": {
-                        "NpcName": "Shane",
+                        "NpcName": "Cat4", // Orange cat = Cat4
                         "AcceptedContextTags": "item_largemouth_bass",
                         "Message": "Thank you for this delicious fish",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
@@ -151,11 +152,11 @@
             "RewardType": "Object",
             "Reward": "163",
             "FriendshipGain": {
-                "Willy": 200,
-                "Caroline": 500,
-                "Abigail": 500,
-                "Pierre": 500,
-                "Shane": 500
+                "Cat1": 200,
+                "Cat2": 500,
+                "Cat3": 500,
+                "Cat4": 500,
+                "Cat5": 500
             }
         }
     ],
@@ -164,7 +165,7 @@
             "QuestName": "fishy_delivery",
             "OfferedBy": "NPC",
             "OfferDetails": {
-                "NpcName": "Willy",
+                "NpcName": "Cat1",
                 "DialogueText": "I haven't eaten in many days, would you be so helpful as to get me a sardine to tide the onset of death."
             },
             "When": {
@@ -175,11 +176,12 @@
             "QuestName": "watery_exploration",
             "OfferedBy": "NPC",
             "OfferDetails": {
-                "NpcName": "Willy",
-                "DialogueText": "I heard there's a good fishing spot near by, would you mind checking it out."
+                "NpcName": "Cat1",
+                "DialogueText": " Please visit my village, hang a right as you enter the woods, my friends could use some help. The lake to the north is blocked from over growth."
             },
             "When": {
                 "QuestNeverAccepted": "yes",
+                "FriendshipLevel": "Cat1 1",
                 "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest"
             }
         },
@@ -187,11 +189,12 @@
             "QuestName": "feed_village",
             "OfferedBy": "NPC",
             "OfferDetails": {
-                "NpcName": "Willy",
+                "NpcName": "Cat1",
                 "DialogueText": "Please feed people"
             },
             "When": {
                 "QuestNeverAccepted": "yes",
+                //"FriendshipLevel": "Cat1 2",
                 "not:HasActiveQuest": "fishy_delivery@StarCat.CatastrophicHungerQuest watery_exploration@StarCat.CatastrophicHungerQuest"
             }
         }
