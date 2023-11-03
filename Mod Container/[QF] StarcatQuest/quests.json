@@ -13,7 +13,7 @@
             "Trigger": "Cat1 131",
             "ReactionText": "Thank you, @! I will devour it with glee.",
             "FriendshipGain": {
-                "Cat1": 100
+                "Cat1": 200
             }
             //"EventOnComplete": "" // Cat guides player to forest village/entrance
         },
@@ -39,7 +39,7 @@
             "Cancelable": false,
             "ReactionText": "Thank you, @! Glad to know it truely exists.",
             "FriendshipGain": {
-                "Cat1": 100
+                "Cat1": 200
             }
         },
         {
