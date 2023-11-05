@@ -95,7 +95,7 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"Cat2": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 49 45/Blue Cat"
+				"Cat2": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 9 44/Blue Cat"
 			}
 		},
 		{
@@ -135,7 +135,7 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"Cat3": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 50 45/Red Cat"
+				"Cat3": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 27 44/Red Cat"
 			}
 		},
 		{
@@ -175,7 +175,7 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"Cat4": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 51 45/Bread Cat"
+				"Cat4": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 13 54/Bread Cat"
 			}
 		},
 		{
@@ -215,7 +215,7 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"Cat5": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 52 45/Sleepy Cat"
+				"Cat5": "adult/neutral/outgoing/negative/male/not-datable/Sebastian/Town/fall 7/Caroline 'mom' Pierre 'dad'/Custom_catVillage 23 54/Sleepy Cat"
 			}
 		},
 		{

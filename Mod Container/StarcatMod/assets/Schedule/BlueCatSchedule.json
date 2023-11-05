@@ -1,7 +1,7 @@
 {
-	"spring": "610 Custom_catVillage 49 45 0",
-	"summer": "610 Custom_catVillage 49 45 0",
-	"fall": "610 Custom_catVillage 49 45 0",
-	"winter": "610 Custom_catVillage 49 45 0",
-	"rain": "610 Custom_catVillage 49 45 0"
+	"spring": "610 Custom_catVillage 9 44 0/630 Custom_catVillage 17 42 0",
+	"summer": "610 Custom_catVillage 9 44 0/630 Custom_catVillage 17 42 0",
+	"fall": "610 Custom_catVillage 9 44 0/630 Custom_catVillage 17 42 0",
+	"winter": "610 Custom_catVillage 9 44 0/630 Custom_catVillage 17 42 0",
+	"rain": "610 Custom_catVillage 9 44 0/630 Custom_catVillage 17 42 0"
 }
