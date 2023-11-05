@@ -1,49 +1,56 @@
 {
-  "Format": "1.23.0",
-  "CustomLocations": [
-    // Add Custom Quest Area Here
-    {
-      "Name": "Custom_catVillage",
-      "FromMapFile": "assets/Patches/CatVillage2.tmx"
-    }
-  ],
-  // Changes To Existing Content Go Here
-  "Changes": [
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Woods", //The map you are patching it into
-      "FromFile": "assets/Patches/CatVillage2.tmx", //the file pathing to your map
-      "ToArea": {
-        "X": 49,
-        "Y": 54,
-        "Width": 60,
-        "Height": 60
-      },
-      "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedALL": false
-      } //when conditions. More on this later!
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Woods", //the map you are adding the warp to
-      "TextOperations": [
-        {
-          "Operation": "Append", //append = add to existing without over-writing
-          "Target": [
-            "MapProperties",
-            "Warp"
-          ],
-          "Value": "46 2 Custom_catVillage 49 54",
-          "Delimiter": " "
-        }
-      ],
-    },
-    {
-      "Action": "Load",
-      "Target": "Data/Events/Custom_catVillage",
-      "fromFile": "assets/Events/Custom_catVillage.json"
-    },
-    {
+	"Format": "1.23.0",
+	"CustomLocations": [
+		// Add Custom Quest Area Here
+		{
+			"Name": "Custom_catVillage",
+			"FromMapFile": "assets/Patches/CatVillage2.tmx"
+		}
+	],
+	// Changes To Existing Content Go Here
+	"Changes": [
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods", //The map you are patching it into
+			"FromFile": "assets/Patches/CatVillage2.tmx", //the file pathing to your map
+			"ToArea": {
+				"X": 49,
+				"Y": 54,
+				"Width": 60,
+				"Height": 60
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedALL": false
+			} //when conditions. More on this later!
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods", //the map you are adding the warp to
+			"TextOperations": [
+				{
+					"Operation": "Append", //append = add to existing without over-writing
+					"Target": [
+						"MapProperties",
+						"Warp"
+					],
+					"Value": "46 2 Custom_catVillage 49 54",
+					"Delimiter": " "
+				}
+			]
+		},
+		// {
+		// 	"Action": "Load",
+		// 	"Target": "Data/Events/Custom_catVillage",
+		// 	"fromFile": "assets/Events/Custom_catVillage.json"
+		// },
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Woods",
+			"Entries": {
+				"9896621": "continue/50 12/farmer 59 15 3 Cat1 47 11 1/skippable/pause 1000/speak Cat1 \"Over here, @!\" /speed farmer 4/move farmer -9 0 0/move farmer 0 -4 3/move farmer -1 0 3/speak Cat1 \"Glad you made it, @. Our village is just North of here, in those trees.\" /move Cat1 0 0 0/pause 1500/move Cat1 0 0 1/speak Cat1 \"The others are excited to meet you. See you there!\" /speed Cat1 4/move Cat1 -2 0 0/speed Cat1 4/move Cat1 0 -6 1/speed Cat1 4/move Cat1 1 0 0/speed Cat1 4/move Cat1 0 -2 0/end 49 11"
+			}
+		},
+		{
 			"LogName": "NPC Manifestation",
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
@@ -83,7 +90,7 @@
 			"Target": "Characters/schedules/Cat1",
 			"FromFile": "assets/Schedule/BlackCatSchedule.json"
 		},
-    {
+		{
 			"LogName": "NPC Manifestation",
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
@@ -99,7 +106,7 @@
 				"Cat2": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
 			}
 		},
-    {
+		{
 			"LogName": "Blue Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat2",
@@ -123,7 +130,7 @@
 			"Target": "Characters/schedules/Cat2",
 			"FromFile": "assets/Schedule/BlueCatSchedule.json"
 		},
-    {
+		{
 			"LogName": "NPC Manifestation",
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
@@ -139,7 +146,7 @@
 				"Cat3": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
 			}
 		},
-    {
+		{
 			"LogName": "Blue Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat3",
@@ -163,7 +170,7 @@
 			"Target": "Characters/schedules/Cat3",
 			"FromFile": "assets/Schedule/RedCatSchedule.json"
 		},
-    {
+		{
 			"LogName": "NPC Manifestation",
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
@@ -179,7 +186,7 @@
 				"Cat4": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
 			}
 		},
-    {
+		{
 			"LogName": "Blue Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat4",
@@ -203,7 +210,7 @@
 			"Target": "Characters/schedules/Cat4",
 			"FromFile": "assets/Schedule/BreadCatSchedule.json"
 		},
-    {
+		{
 			"LogName": "NPC Manifestation",
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
@@ -219,7 +226,7 @@
 				"Cat5": "I love what you gave me!/72 74 228 227 233/I like this./60 62 64 66 68 70 597 591 595/I don't like this./80 330/I hate this./2/That was very thoughtful of you./-4/ "
 			}
 		},
-    {
+		{
 			"LogName": "Blue Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat5",
@@ -243,41 +250,5 @@
 			"Target": "Characters/schedules/Cat5",
 			"FromFile": "assets/Schedule/SleepyCatSchedule.json"
 		}
-    
-    // {
-    //   "Action": "EditData",
-    //   "Target": "Characters/Dialogue/Cat1",
-    //   "Entries": {
-    //     "Introduction": "So you're the one here to fix our food problem, huh?#Good luck getting through that shrubbery."
-    //   }
-    // },
-    // {
-    //   "Action": "EditData",
-    //   "Target": "Characters/Dialogue/Cat2",
-    //   "Entries": {
-    //     "Introduction": "You're the first human I've ever seen!"
-    //   }
-    // },
-    // {
-    //   "Action": "EditData",
-    //   "Target": "Characters/Dialogue/Cat3",
-    //   "Entries": {
-    //     "Introduction": "This is a magical Cat Village, not just your old run-of-the-mill generic Cat Village."
-    //   }
-    // },
-    // {
-    //   "Action": "EditData",
-    //   "Target": "Characters/Dialogue/Cat4",
-    //   "Entries": {
-    //     "Introduction": ""
-    //   }
-    // },
-    // {
-    //   "Action": "EditData",
-    //   "Target": "Characters/Dialogue/Cat5",
-    //   "Entries": {
-    //     "Introduction": ""
-    //   }
-    // }
-  ]
+	]
 }

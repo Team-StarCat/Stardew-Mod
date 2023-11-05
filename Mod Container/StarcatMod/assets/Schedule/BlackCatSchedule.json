@@ -1,7 +1,40 @@
 {
+	"spring_Mon_1": "610 Custom_catVillage 47 45 0",
+	"spring_Tue_1": "610 Custom_catVillage 47 45 0",
+	"spring_Wed_1": "610 Custom_catVillage 47 45 0",
+	"spring_Thu_1": "610 Custom_catVillage 47 45 0",
+	"spring_Fri_1": "610 Custom_catVillage 47 45 0",
+	"spring_Sat_1": "610 Custom_catVillage 47 45 0",
+	"spring_Sun_1": "610 Custom_catVillage 47 45 0",
+
+	"summer_Mon_1": "610 Custom_catVillage 47 45 0",
+	"summer_Tue_1": "610 Custom_catVillage 47 45 0",
+	"summer_Wed_1": "610 Custom_catVillage 47 45 0",
+	"summer_Thu_1": "610 Custom_catVillage 47 45 0",
+	"summer_Fri_1": "610 Custom_catVillage 47 45 0",
+	"summer_Sat_1": "610 Custom_catVillage 47 45 0",
+	"summer_Sun_1": "610 Custom_catVillage 47 45 0",
+
+	"fall_Mon_1": "610 Custom_catVillage 47 45 0",
+	"fall_Tue_1": "610 Custom_catVillage 47 45 0",
+	"fall_Wed_1": "610 Custom_catVillage 47 45 0",
+	"fall_Thu_1": "610 Custom_catVillage 47 45 0",
+	"fall_Fri_1": "610 Custom_catVillage 47 45 0",
+	"fall_Sat_1": "610 Custom_catVillage 47 45 0",
+	"fall_Sun_1": "610 Custom_catVillage 47 45 0",
+
+	"winter_Mon_1": "610 Custom_catVillage 47 45 0",
+	"winter_Tue_1": "610 Custom_catVillage 47 45 0",
+	"winter_Wed_1": "610 Custom_catVillage 47 45 0",
+	"winter_Thu_1": "610 Custom_catVillage 47 45 0",
+	"winter_Fri_1": "610 Custom_catVillage 47 45 0",
+	"winter_Sat_1": "610 Custom_catVillage 47 45 0",
+	"winter_Sun_1": "610 Custom_catVillage 47 45 0",
+
 	"spring": "610 Farm 70 16 0",
 	"summer": "610 Farm 70 16 0",
 	"fall": "610 Farm 70 16 0",
 	"winter": "610 Farm 70 16 0",
 	"rain": "610 Farm 70 16 0"
+
 }
