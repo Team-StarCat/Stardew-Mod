@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.10" tiledversion="1.10.2" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
  <image source="Maps/spring_outdoorsTileSheet.png" trans="000000" width="400" height="1264"/>
+ <tile id="308">
+  <animation>
+   <frame tileid="308" duration="1000"/>
+   <frame tileid="1316" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="309">
+  <animation>
+   <frame tileid="309" duration="1000"/>
+   <frame tileid="1317" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="603">
+  <animation>
+   <frame tileid="603" duration="1000"/>
+   <frame tileid="1287" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="604">
+  <animation>
+   <frame tileid="604" duration="1000"/>
+   <frame tileid="1288" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="708">
+  <animation>
+   <frame tileid="708" duration="1000"/>
+   <frame tileid="1234" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="709">
+  <animation>
+   <frame tileid="709" duration="1000"/>
+   <frame tileid="1235" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="710">
+  <animation>
+   <frame tileid="710" duration="1000"/>
+   <frame tileid="1236" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="733">
+  <animation>
+   <frame tileid="733" duration="1000"/>
+   <frame tileid="1259" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="735">
+  <animation>
+   <frame tileid="735" duration="1000"/>
+   <frame tileid="1261" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="758">
+  <animation>
+   <frame tileid="758" duration="1000"/>
+   <frame tileid="1284" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="760">
+  <animation>
+   <frame tileid="760" duration="1000"/>
+   <frame tileid="1286" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="783">
+  <animation>
+   <frame tileid="783" duration="1000"/>
+   <frame tileid="1309" duration="1000"/>
+  </animation>
+ </tile>
+ <tile id="785">
+  <animation>
+   <frame tileid="785" duration="1000"/>
+   <frame tileid="1311" duration="1000"/>
+  </animation>
+ </tile>
  <tile id="1182">
   <properties>
    <property name="Water" value="T"/>
@@ -326,10 +404,10 @@
    <property name="Water" value="T"/>
   </properties>
   <animation>
-   <frame tileid="1293" duration="250"/>
-   <frame tileid="1294" duration="250"/>
-   <frame tileid="1295" duration="250"/>
-   <frame tileid="1296" duration="250"/>
+   <frame tileid="1293" duration="500"/>
+   <frame tileid="1294" duration="500"/>
+   <frame tileid="1295" duration="500"/>
+   <frame tileid="1296" duration="500"/>
   </animation>
  </tile>
  <tile id="1294">
