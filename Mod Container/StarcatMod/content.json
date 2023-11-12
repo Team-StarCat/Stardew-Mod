@@ -116,7 +116,7 @@
 			"LogName": "Blue Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat2",
-			"FromFile": "assets/Image/BlackCat.png"
+			"FromFile": "assets/Image/BlueCat.png"
 		},
 		{
 			"LogName": "Dialogue",
@@ -147,16 +147,16 @@
 			}
 		},
 		{
-			"LogName": "Blue Cat Portraits",
+			"LogName": "Red Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat3",
 			"FromFile": "assets/Image/RedCatPortrait.png"
 		},
 		{
-			"LogName": "Blue Cat Sprites",
+			"LogName": "Red Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat3",
-			"FromFile": "assets/Image/BlackCat.png"
+			"FromFile": "assets/Image/redCat.png"
 		},
 		{
 			"LogName": "Dialogue",
@@ -187,16 +187,16 @@
 			}
 		},
 		{
-			"LogName": "Blue Cat Portraits",
+			"LogName": "Bread Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat4",
 			"FromFile": "assets/Image/BreadCatPortrait.png"
 		},
 		{
-			"LogName": "Blue Cat Sprites",
+			"LogName": "Bread Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat4",
-			"FromFile": "assets/Image/BlackCat.png"
+			"FromFile": "assets/Image/BreadCat.png"
 		},
 		{
 			"LogName": "Dialogue",
@@ -227,16 +227,16 @@
 			}
 		},
 		{
-			"LogName": "Blue Cat Portraits",
+			"LogName": "Sleepy Cat Portraits",
 			"Action": "Load",
 			"Target": "Portraits/Cat5",
 			"FromFile": "assets/Image/SleepyCatPortrait.png"
 		},
 		{
-			"LogName": "Blue Cat Sprites",
+			"LogName": "Sleepy Cat Sprites",
 			"Action": "Load",
 			"Target": "Characters/Cat5",
-			"FromFile": "assets/Image/BlackCat.png"
+			"FromFile": "assets/Image/SleepyCat.png"
 		},
 		{
 			"LogName": "Dialogue",
