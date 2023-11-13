@@ -5,48 +5,46 @@
             "Name": "fishy_delivery",
             "Type": "ItemDelivery",
             "Title": "Fishy Delivery",
-            "Description": "I be very hungered. Please bring me a juicy sardine.\n\n- 5000g",
-            "Objective": "Bring a sardine to the black cat",
-            "Reward": 5000,
+            "Description": "The black cat if very hungery and needs a sardine.\n\n- 500g",
+            "Objective": "Bring the black cat a sardine",
+            "Reward": 500,
             "RewardType": "Money",
             "Cancelable": false,
             "Trigger": "Cat1 131",
-            "ReactionText": "Thank you, @! I will devour it with glee.",
+            "ReactionText": "Thank you, @! It looks delectable.",
             "FriendshipGain": {
-                "Cat1": 200
+                "Cat1": 150
             }
-            //"EventOnComplete": "" // Cat guides player to forest village/entrance
         },
         {
             "Name": "watery_exploration",
             "Type": "PurrplingCat.QuestEssentials/Adventure",
-            "Title": "Watery Exploration",
-            "Description": "The path to the lake is over grown. It's to the north of the village\n\n- Reward 10000g",
+            "Title": "Forging a Path",
+            "Description": "The path to the lake in the cat village is blocked and needs cleared. The village is right inside the woods.\n\n- Reward 1000g",
             "Tasks": [
                 {
                     "Name": "cross_bridge",
                     "Type": "EnterSpot",
                     "Data": {
-                        //"Tile": "16,15", // Can only have one tile active at a time
                         "Tile": "16,14",
                         "Location": "Custom_catVillage"
                     },
                     "Description": "Clear the path to the lake"
                 }
             ],
-            "Reward": 10000,
+            "Reward": 1000,
             "RewardType": "Money",
             "Cancelable": false,
-            "ReactionText": "Thank you, @! Glad to know it truely exists.",
+            "ReactionText": "Thank you, @ the lake is once again accessable from our village.",
             "FriendshipGain": {
-                "Cat1": 200
+                "Cat1": 150
             }
         },
         {
             "Name": "feed_village",
             "Type": "PurrplingCat.QuestEssentials/Adventure",
             "Title": "Feed the Village",
-            "Description": "The cats of the village are very hungery, please bring them food",
+            "Description": "The cats of the village are very hungery, see what you can do to help them.",
             "Tasks": [
                 {
                     "Name": "talk_red",
@@ -190,7 +188,7 @@
             "OfferedBy": "NPC",
             "OfferDetails": {
                 "NpcName": "Cat1",
-                "DialogueText": "Please feed people"
+                "DialogueText": "Even with the path to the lake cleared everyone is too weak to be able to use it. If you would please help everyone regain their strength I would be forever greatful."
             },
             "When": {
                 "QuestNeverAccepted": "yes",
