@@ -23,13 +23,22 @@
             "Description": "The path to the lake in the cat village is blocked and needs cleared. The village is right inside the woods.\n\n- Reward 1000g",
             "Tasks": [
                 {
-                    "Name": "cross_bridge",
+                    "Name": "enter_lake",
                     "Type": "EnterSpot",
                     "Data": {
                         "Tile": "16,14",
                         "Location": "Custom_catVillage"
                     },
                     "Description": "Clear the path to the lake"
+                },
+                {
+                    "Name": "deliver_info",
+                    "Type": "Talk",
+                    "Description": "Let the black cat know the path is clear",
+                    "Data": {
+                        "NpcName": "Cat1",
+                        "DialogueText": "Thank you for clearing the way to the lake. Take this, it's not much but it's all we have"
+                    }
                 }
             ],
             "Reward": 1000,
