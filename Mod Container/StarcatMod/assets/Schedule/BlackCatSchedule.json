@@ -31,7 +31,7 @@
 	"winter_Sat_1": "610 Custom_catVillage 47 45 0",
 	"winter_Sun_1": "610 Custom_catVillage 47 45 0",
 
-	"spring": "610 Farm 70 16 0/620 Farm 80 17 0",
+	"spring": "610 Farm 70 16 0",
 	"summer": "610 Farm 70 16 0",
 	"fall": "610 Farm 70 16 0",
 	"winter": "610 Farm 70 16 0",
