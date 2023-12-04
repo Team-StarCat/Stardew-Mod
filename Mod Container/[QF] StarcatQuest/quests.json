@@ -38,7 +38,10 @@
                     "Data": {
                         "NpcName": "Cat1",
                         "DialogueText": "Thank you for clearing the way to the lake. Take this, it's not much but it's all we have"
-                    }
+                    },
+                    "RequiredTasks": [
+                        "enter_lake"
+                    ]
                 }
             ],
             "Reward": 1000,
@@ -69,6 +72,7 @@
                     "Name": "talk_green",
                     "Type": "Talk",
                     "Description": "Talk with the green cat",
+                    "Title": "Talk Green",
                     "Data": {
                         "NpcName": "Cat5", // Green Cat = Cat5
                         "DialogueText": "I haven't eaten in many days, could you bring me a Tiger Trout",
