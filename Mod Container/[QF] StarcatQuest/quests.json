@@ -5,13 +5,13 @@
             "Name": "fishy_delivery",
             "Type": "ItemDelivery",
             "Title": "Fishy Delivery",
-            "Description": "The black cat if very hungery and needs a sardine.\n\n- 500g",
+            "Description": "The black cat is very hungry and needs a sardine.\n\n- 500g",
             "Objective": "Bring the black cat a sardine",
             "Reward": 500,
             "RewardType": "Money",
             "Cancelable": false,
             "Trigger": "Cat1 131",
-            "ReactionText": "Thank you, @! It looks delectable.",
+            "ReactionText": "Thank you, @! It looks delectable. I must ask something else once I am done with this fish.",
             "FriendshipGain": {
                 "Cat1": 150
             }
@@ -20,7 +20,7 @@
             "Name": "watery_exploration",
             "Type": "PurrplingCat.QuestEssentials/Adventure",
             "Title": "Forging a Path",
-            "Description": "The path to the lake in the cat village is blocked and needs cleared. The village is right inside the woods.\n\n- Reward 1000g",
+            "Description": "The path to the lake in the Cat Village is blocked and needs to be cleared out. The village is on the first right inside the woods.\n\n- Reward 1000g",
             "Tasks": [
                 {
                     "Name": "enter_lake",
@@ -37,7 +37,7 @@
                     "Description": "Let the black cat know the path is clear",
                     "Data": {
                         "NpcName": "Cat1",
-                        "DialogueText": "Thank you for clearing the way to the lake. Take this, it's not much but it's all we have"
+                        "DialogueText": "Thank you for clearing the way to the lake. Take this, I know it's not much but it's all we have."
                     },
                     "RequiredTasks": [
                         "enter_lake"
@@ -47,7 +47,7 @@
             "Reward": 1000,
             "RewardType": "Money",
             "Cancelable": false,
-            "ReactionText": "Thank you, @ the lake is once again accessable from our village.",
+            "ReactionText": "Thank you, @. The lake is once again accessable from our village.",
             "FriendshipGain": {
                 "Cat1": 150
             }
@@ -56,7 +56,7 @@
             "Name": "feed_village",
             "Type": "PurrplingCat.QuestEssentials/Adventure",
             "Title": "Feed the Village",
-            "Description": "The cats of the village are very hungery, see what you can do to help them.",
+            "Description": "The cats of the village are very hungry, see what you can do to help them.",
             "Tasks": [
                 {
                     "Name": "talk_red",
@@ -64,7 +64,7 @@
                     "Description": "Talk with the red cat",
                     "Data": {
                         "NpcName": "Cat3", // Red cat = Cat3
-                        "DialogueText": "I haven't eaten in many days, could you bring me a catfish",
+                        "DialogueText": "Hello human. Without my strength, I cannot grab fish from the lake.#$b#Will you be so willing to bring me a catfish?",
                         "ReceiveItems": "object_catfish" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
@@ -75,7 +75,7 @@
                     "Title": "Talk Green",
                     "Data": {
                         "NpcName": "Cat5", // Green Cat = Cat5
-                        "DialogueText": "I haven't eaten in many days, could you bring me a Tiger Trout",
+                        "DialogueText": "*yawn* still too tired to fish, could you please bring me a Tiger Trout?",
                         "ReceiveItems": "object_tiger_trout" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
@@ -85,7 +85,7 @@
                     "Description": "Talk with the blue cat",
                     "Data": {
                         "NpcName": "Cat2", // Blue cat = Cat2
-                        "DialogueText": "I haven't eaten in many days, could you bring me a Midnight Carp",
+                        "DialogueText": "Despite my cool and unbothered look, it is true I have little strength to catch fish.#$b#I believe a Midnight Carp would fix this fatigue...",
                         "ReceiveItems": "object_midnight_carp" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
@@ -95,7 +95,7 @@
                     "Description": "Talk with the orange cat",
                     "Data": {
                         "NpcName": "Cat4", // Orange cat = Cat4
-                        "DialogueText": "I haven't eaten in many days, could you bring me a Largemouth Bass",
+                        "DialogueText": "So hungry, could you catch me a breadfish?#$b#Right, right. No such thing. How about a Largemouth Bass?",
                         "ReceiveItems": "object_largemouth_bass" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
@@ -106,7 +106,7 @@
                     "Data": {
                         "NpcName": "Cat3", // Red cat = Cat3
                         "AcceptedContextTags": "item_catfish",
-                        "Message": "Thank you for this delicious fish",
+                        "Message": "With this, I shall live to fish another day.",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
                     "RequiredTasks": [
@@ -121,7 +121,7 @@
                     "Data": {
                         "NpcName": "Cat5", // Green Cat = Cat5
                         "AcceptedContextTags": "item_tiger_trout",
-                        "Message": "Thank you for this delicious fish",
+                        "Message": "Oh, thank you so much *yawn* Maybe I can actually go fishing now... #$b#or maybe not *yawn*",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
                     "RequiredTasks": [
@@ -136,7 +136,7 @@
                     "Data": {
                         "NpcName": "Cat2", // Blue cat = Cat2
                         "AcceptedContextTags": "item_midnight_carp",
-                        "Message": "Thank you for this delicious fish",
+                        "Message": "Finally, this hunger can be satiated!",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
                     "RequiredTasks": [
@@ -151,7 +151,7 @@
                     "Data": {
                         "NpcName": "Cat4", // Orange cat = Cat4
                         "AcceptedContextTags": "item_largemouth_bass",
-                        "Message": "Thank you for this delicious fish",
+                        "Message": "It's not bread, but this will do. Thank you!",
                         "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h" // If delivering more than one
                     },
                     "RequiredTasks": [
@@ -177,7 +177,7 @@
             "OfferedBy": "NPC",
             "OfferDetails": {
                 "NpcName": "Cat1",
-                "DialogueText": "I haven't eaten in many days, would you be so helpful as to get me a sardine to tide the onset of death."
+                "DialogueText": "I haven't eaten in many days, would you be so helpful as to get me a sardine to tide the onset of death?"
             },
             "When": {
                 "QuestNeverAccepted": "yes"
@@ -188,7 +188,7 @@
             "OfferedBy": "NPC",
             "OfferDetails": {
                 "NpcName": "Cat1",
-                "DialogueText": " Please visit my village, hang a right as you enter the woods, my friends could use some help. The lake to the north is blocked from over growth."
+                "DialogueText": "Please visit my village, my friends and I could use some help.#$b#If you hang a right as you enter the woods, you will find our village. There is a lake to the North blocked by overgrowth.#$b#Please clear the path, and we will be forever grateful."
             },
             "When": {
                 "QuestNeverAccepted": "yes",
@@ -201,7 +201,7 @@
             "OfferedBy": "NPC",
             "OfferDetails": {
                 "NpcName": "Cat1",
-                "DialogueText": "Even with the path to the lake cleared everyone is too weak to be able to use it. If you would please help everyone regain their strength I would be forever greatful."
+                "DialogueText": "Even with the path to the lake cleared, everyone is still too weak to go fishing.#$b#If you would please help everyone regain their strength, I can give you a reward better than money."
             },
             "When": {
                 "QuestNeverAccepted": "yes",
