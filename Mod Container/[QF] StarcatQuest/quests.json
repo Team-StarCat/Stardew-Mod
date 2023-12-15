@@ -65,7 +65,7 @@
                     "Data": {
                         "NpcName": "Cat3", // Red cat = Cat3
                         "DialogueText": "Hello human. Without my strength, I cannot grab fish from the lake.#$b#Will you be so willing to bring me a catfish?",
-                        "ReceiveItems": "object_catfish" // For testing purposes just give them the fish (todo: replace this with bait)
+                        "ReceiveItems": "object_Grey_Bait" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
                 {
@@ -76,7 +76,7 @@
                     "Data": {
                         "NpcName": "Cat5", // Green Cat = Cat5
                         "DialogueText": "*yawn* still too tired to fish, could you please bring me a Tiger Trout?",
-                        "ReceiveItems": "object_tiger_trout" // For testing purposes just give them the fish (todo: replace this with bait)
+                        "ReceiveItems": "object_Orange_Bait" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
                 {
@@ -86,7 +86,7 @@
                     "Data": {
                         "NpcName": "Cat2", // Blue cat = Cat2
                         "DialogueText": "Despite my cool and unbothered look, it is true I have little strength to catch fish.#$b#I believe a Midnight Carp would fix this fatigue...",
-                        "ReceiveItems": "object_midnight_carp" // For testing purposes just give them the fish (todo: replace this with bait)
+                        "ReceiveItems": "object_Purple_Bait" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
                 {
@@ -96,7 +96,7 @@
                     "Data": {
                         "NpcName": "Cat4", // Orange cat = Cat4
                         "DialogueText": "So hungry, could you catch me a breadfish?#$b#Right, right. No such thing. How about a Largemouth Bass?",
-                        "ReceiveItems": "object_largemouth_bass" // For testing purposes just give them the fish (todo: replace this with bait)
+                        "ReceiveItems": "object_Green_Bait" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
                 {

@@ -1,4 +1,3 @@
-// This Displays Mod Information To Console On Launch
 {
   "Name": "Catastrophic Hunger Quest",
   "Author": "StarCat",
@@ -13,6 +12,10 @@
   "Dependencies": [
     {
       "UniqueID": "PurrplingCat.QuestEssentials",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "Starcat.FishingBaitModBait",
       "IsRequired": true
     }
   ]
