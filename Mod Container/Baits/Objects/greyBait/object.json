@@ -1,0 +1,16 @@
+{
+    "Name": "Grey Bait",
+    "Price": 10,
+    "Description": "Helps you catch a Catfish",
+    "Edibility": 0,
+    "Recipe": {
+        "ResultCount": 1,
+        "Ingredients": [
+            {
+                "Object": 131,
+                "Count": 1
+            }
+        ],
+        "CanPurchase": false
+    }
+}

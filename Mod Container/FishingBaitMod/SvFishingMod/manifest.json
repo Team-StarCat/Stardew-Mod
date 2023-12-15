@@ -1,0 +1,10 @@
+﻿{
+  "Name": "SvFishingMod",
+  "Author": "StarCat",
+  "Version": "0.0.1",
+  "Description": "Allows for fishing odds customization.",
+  "UniqueID": "StarCat.FishingBaitMod",
+  "EntryDll": "SvFishingMod.dll",
+  "MinimumApiVersion": "3.1.0",
+  "UpdateKeys": []
+}

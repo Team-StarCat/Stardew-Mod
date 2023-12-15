@@ -1,0 +1,16 @@
+{
+    "Name": "Green Bait",
+    "Price": 10,
+    "Description": "Helps you catch a Largemouth Bass",
+    "Edibility": 0,
+    "Recipe": {
+        "ResultCount": 1,
+        "Ingredients": [
+            {
+                "Object": 131,
+                "Count": 1
+            }
+        ],
+        "CanPurchase": false
+    }
+}
