@@ -76,7 +76,7 @@
                     "Data": {
                         "NpcName": "Cat5", // Green Cat = Cat5
                         "DialogueText": "*yawn* still too tired to fish, could you please bring me a Tiger Trout?",
-                        "ReceiveItems": "object_Orange_Bait" // For testing purposes just give them the fish (todo: replace this with bait)
+                        "ReceiveItems": "object_Red_Bait" // For testing purposes just give them the fish (todo: replace this with bait)
                     }
                 },
                 {
